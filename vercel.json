@@ -6,10 +6,14 @@
       "use": "@vercel/static"
     }
   ],
-  "routes": [
+  "rewrites": [
     {
-      "src": "/(.*)",
-      "dest": "/web/index.html"
+      "source": "/(manifest.json|flutter_service_worker.js|flutter_bootstrap.js|version.json|main.dart.js|flutter.js|canvaskit.*|assets/.*|icons/.*)",
+      "destination": "/web/$1"
+    },
+    {
+      "source": "/(.*)",
+      "destination": "/web/index.html"
     }
   ]
 }
