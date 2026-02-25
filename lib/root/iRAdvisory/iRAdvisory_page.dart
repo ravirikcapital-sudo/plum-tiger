@@ -156,7 +156,7 @@ class InvestorRelationsPage extends StatelessWidget {
                   ),
                   children: [
                     TextSpan(
-                      text: 'IR ',
+                      text: '',
                       style: TextStyle(color: accentOrange),
                     ),
                     TextSpan(
